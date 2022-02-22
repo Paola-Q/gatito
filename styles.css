@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: purple;
+}
+
+.cuadro div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cuadro div:hover{
+    background-color: rgba(209, 165, 245, 0.938);
+    cursor: pointer;
+}
+
+button{
+    padding: 20px;
+    background-color: rgb(128, 77, 209);
+    color: black;
+    outline: none;
+    border: 0px;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(137, 86, 231);
+}
+
+.lineContainer {
+    position: relative;
+}
+
+#linea {
+    position: absolute;
+    display: block;
+    background-color: green;
+}
